@@ -77,6 +77,7 @@ Project Purpose
 
 This project was built as a full-stack portfolio project to demonstrate:
 
+
 frontend architecture
 
 UI design
@@ -88,4 +89,10 @@ Author
 
 Pooja
 Aspiring Full-Stack Developer
- Building. Learning. Shipping. 
+ Building. Learning. Shipping.
+ some screenshots of frontend
+ <img width="1886" height="920" alt="Screenshot 2026-02-08 233224" src="https://github.com/user-attachments/assets/09393d1f-7179-4f17-8ae7-7cab3a99433c" />
+<img width="1889" height="922" alt="Screenshot 2026-02-08 233314" src="https://github.com/user-attachments/assets/29faaca6-339d-4212-8208-bad8fbd19250" />
+
+<img width="1804" height="914" alt="Screenshot 2026-02-08 233335" src="https://github.com/user-attachments/assets/d8a62fab-20c1-45fd-83da-4c57547e9ec2" />
+
