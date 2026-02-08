@@ -90,7 +90,7 @@ Author
 Pooja
 Aspiring Full-Stack Developer
  Building. Learning. Shipping.
- some screenshots of frontend
+ Emoura User Interface (UI)
  <img width="1886" height="920" alt="Screenshot 2026-02-08 233224" src="https://github.com/user-attachments/assets/09393d1f-7179-4f17-8ae7-7cab3a99433c" />
 <img width="1889" height="922" alt="Screenshot 2026-02-08 233314" src="https://github.com/user-attachments/assets/29faaca6-339d-4212-8208-bad8fbd19250" />
 
