@@ -1,0 +1,45 @@
+CREATE TABLE IF NOT EXISTS products (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  name VARCHAR(255) NOT NULL,
+  category VARCHAR(255),
+  image_url VARCHAR(512),
+  price DOUBLE NOT NULL,
+  rating DOUBLE,
+  description TEXT
+);
+
+CREATE TABLE IF NOT EXISTS user_events (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  session_id VARCHAR(255) NOT NULL,
+  event_type VARCHAR(255) NOT NULL,
+  product_id BIGINT,
+  created_at TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS wishlist_items (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  user_id VARCHAR(255) NOT NULL,
+  product_id BIGINT NOT NULL,
+  created_at TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS cart_items (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  user_id VARCHAR(255) NOT NULL,
+  product_id BIGINT NOT NULL,
+  quantity INT NOT NULL,
+  updated_at TIMESTAMP
+);
+CREATE TABLE IF NOT EXISTS users (
+  id BIGINT PRIMARY KEY AUTO_INCREMENT,
+  mobile VARCHAR(255) NOT NULL UNIQUE,
+  name VARCHAR(255),
+  created_at TIMESTAMP,
+  last_login_at TIMESTAMP
+);
+
+ALTER TABLE users ADD COLUMN email VARCHAR(255);
+
+ALTER TABLE users ADD COLUMN address VARCHAR(512);
+
+ALTER TABLE users ADD COLUMN pincode VARCHAR(20);
