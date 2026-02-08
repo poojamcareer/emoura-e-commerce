@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoura Login â€” For Feminine, By Feminine</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="login">
+    <main class="container" style="padding: 60px 0;">
+      <section class="hero">
+        <div class="hero-card">
+          <div class="tagline">For Feminine, By Feminine</div>
+          <h1>Welcome to Emoura</h1>
+          <p>Sign in to unlock smart recommendations, or skip and explore as a guest.</p>
+          <div class="cta-row">
+            <button class="btn btn-outline" id="skipLogin" type="button">Skip for Now</button>
+          </div>
+        </div>
+        <div class="panel">
+          <h2 class="section-title">Login / Sign Up</h2>
+          <form id="loginForm">
+            <div style="display: grid; gap: 16px;">
+              <label>
+                <span style="display: block; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;">
+                  Full Name 
+                </span>
+                <input
+                  id="nameInput"
+                  type="text"
+                  placeholder="Your name"
+                  style="width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid rgba(31, 26, 28, 0.15);"
+                />
+              </label>
+              <label>
+                <span style="display: block; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;">
+                  Mobile Number
+                </span>
+                <input
+                  id="mobileInput"
+                  type="tel"
+                  placeholder="Enter mobile number"
+                  required
+                  style="width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid rgba(31, 26, 28, 0.15);"
+                />
+              </label>
+              <button class="btn btn-primary" type="button" id="sendOtp">Send OTP</button>
+              <div id="otpArea" style="display: none; gap: 12px; grid-template-columns: 1fr;">
+                <label>
+                  <span style="display: block; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;">
+                    Enter OTP
+                  </span>
+                  <input
+                    id="otpInput"
+                    type="text"
+                    placeholder="6-digit OTP"
+                    style="width: 100%; padding: 12px 14px; border-radius: 12px; border: 1px solid rgba(31, 26, 28, 0.15);"
+                  />
+                </label>
+                <button class="btn btn-primary" id="verifyOtp" type="button">Verify & Login</button>
+                <button class="btn btn-outline" id="resendOtp" type="button">Resend OTP</button>
+              </div>
+              <p id="loginMessage" style="color: var(--rose-dark); margin: 0;"></p>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

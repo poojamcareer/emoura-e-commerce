@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emoura — For Feminine, By Feminine</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body data-page="explore">
+    <header class="site-header">
+      <div class="container nav">
+        <a class="logo" href="dashboard.htm">
+          <img src="assets/emoura-logo.png" alt="Emoura logo" />
+          Emoura
+        </a>
+        <nav class="nav-links">
+          <a href="dashboard.htm">Dashboard</a>
+          <a class="active" href="explore.html">Explore</a>
+          <a href="women.html">Women</a>
+          <a href="girls.html">Girls</a>
+          <a href="beauty.html">Beauty</a>
+          <a href="footwear.html">Footwear</a>
+        </nav>
+        <div class="nav-cta">
+          <a class="icon-btn" href="whishlist.html" aria-label="Wishlist">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M20.8 8.6c0 5-8.8 11-8.8 11s-8.8-6-8.8-11a4.8 4.8 0 0 1 8.8-2.7 4.8 4.8 0 0 1 8.8 2.7z"></path>
+            </svg>
+          </a>
+          <div class="icon-stack">
+            <a class="icon-btn" href="bag.html" aria-label="Bag">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M6 7h12l1 13H5L6 7z"></path>
+                <path d="M9 7a3 3 0 0 1 6 0"></path>
+              </svg>
+            </a>
+            <span class="badge-count" id="bagCount">0</span>
+          </div>
+          <a class="icon-btn" id="profileLink" href="profile.html" aria-label="Profile">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="8" r="4"></circle>
+              <path d="M4 20c2.5-4 13.5-4 16 0"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="container subnav">
+        <div class="search-bar">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="7"></circle>
+            <line x1="16.5" y1="16.5" x2="21" y2="21"></line>
+          </svg>
+          <input id="searchInput" type="search" placeholder="Search Emoura" />
+        </div>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <div class="hero-card">
+          <div class="tagline">For Feminine, By Feminine</div>
+          <h1>Explore the Emoura Atelier</h1>
+          <p>
+            Discover the luxury houses that define our recommendation system. Each brand is curated for
+            craftsmanship, feminine energy, and luminous silhouettes.
+          </p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="dashboard.htm">View Recommendations</a>
+            <a class="btn btn-outline" href="women.html">Shop Women</a>
+          </div>
+        </div>
+        <div class="panel">
+          <h2 class="section-title">Luxury Houses</h2>
+          <p>
+            Browse the maisons and ateliers that inspire Emoura. Our stylists match you to each brand based on
+            your view history and mood edits.
+          </p>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-title">
+          <h2>Brand Directory</h2>
+          <span class="chip">Live Capsules</span>
+        </div>
+        <div id="brandGrid" class="brand-grid"></div>
+      </section>
+
+      <section class="panel" style="margin-top: 32px;">
+        <h2 class="section-title">Why Emoura?</h2>
+        <div class="insight-row">
+          <div class="insight">
+            <h3>Smart Curation</h3>
+            <p>Recommendations evolve in real time as you explore silhouettes and textures.</p>
+          </div>
+          <div class="insight">
+            <h3>Luxury Only</h3>
+            <p>Every brand is vetted for craftsmanship, exclusivity, and feminine storytelling.</p>
+          </div>
+          <div class="insight">
+            <h3>Stylist Notes</h3>
+            <p>Personalized edits help you build full looks across apparel, beauty, and footwear.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="modal">
+      <div class="modal-overlay" data-close="true"></div>
+      <div class="modal-card">
+        <h3>Product</h3>
+        <p class="modal-brand"></p>
+        <p class="modal-desc"></p>
+        <p><strong class="modal-price"></strong> • <span class="modal-tag"></span></p>
+        <div class="cta-row">
+          <button class="btn btn-primary" data-close="true">Close</button>
+        </div>
+      </div>
+    </div>
+    <div class="toast">
+      <div class="toast-msg">Added to Bag</div>
+    </div>
+
+    <footer class="footer container">Emoura Luxury Fashion Experience • Crafted for feminine energy.</footer>
+    <script src="app.js"></script>
+  </body>
+</html>
